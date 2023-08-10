@@ -48,6 +48,7 @@ function displayMessage(message, backgroundColor, fontColor) {
     outputBox.style.color = fontColor;
 }
 
+//Refresh btn-feat.
 refreshBtn.addEventListener("click", function () {
     initialPriceInput.value = "";
     stocksQuantityInput.value = "";
