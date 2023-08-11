@@ -32,6 +32,7 @@ const optionsElements = document.querySelectorAll(".option");
 const scoreElement = document.querySelector(".score");
 const skipButton = document.querySelector(".skip-button");
 const resultElement = document.querySelector(".result");
+const retryButton = document.querySelector(".retry-button");
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -49,8 +50,8 @@ function updateScore() {
 
 function showResult() {
     resultElement.textContent = getResultMessage(score);
-    retryButton.style.display = "block"; 
-    skipButton.style.display = "none"; 
+    retryButton.style.display = "block";
+    skipButton.style.display = "none";
 }
 
 function getResultMessage(score) {
@@ -68,6 +69,16 @@ function getResultMessage(score) {
 showQuestion(currentQuestionIndex);
 updateScore();
 
+// Function to reset the quiz
+function resetQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    showQuestion(currentQuestionIndex);
+    updateScore();
+    resultElement.textContent = ""; // Clearing result message
+    retryButton.style.display = "none"; // Hiding retry-button
+    skipButton.style.display = "block"; //Showing skip-button
+}
 // Event listener for option buttons
 optionsElements.forEach((option, index) => {
     option.addEventListener("click", () => {
@@ -76,17 +87,17 @@ optionsElements.forEach((option, index) => {
             updateScore();
         }
 
-        // Move to the next question
+        // Moving to the next question
         currentQuestionIndex++;
         if (currentQuestionIndex < questions.length) {
             showQuestion(currentQuestionIndex);
-            resultElement.textContent = ""; // Clear result message
+            resultElement.textContent = ""; // Clearing result message
         } else {
             showResult();
         }
     });
 });
-
+// Event listener for skip button
 skipButton.addEventListener("click", () => {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
@@ -95,19 +106,6 @@ skipButton.addEventListener("click", () => {
         showResult();
     }
 });
-
-const retryButton = document.querySelector(".retry-button");
-
-// Function to reset the quiz
-function resetQuiz() {
-    currentQuestionIndex = 0;
-    score = 0;
-    showQuestion(currentQuestionIndex);
-    updateScore();
-    resultElement.textContent = ""; // Clear result message
-    retryButton.style.display = "none"; // Hide retry button
-    skipButton.style.display = "block"; 
-}
 
 // Event listener for the Retry button
 retryButton.addEventListener("click", resetQuiz);
