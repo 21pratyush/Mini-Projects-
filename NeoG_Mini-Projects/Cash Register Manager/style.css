@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    min-width: 100vw;
+}
+
+
+.container {
+    margin: 4rem auto 7rem;
+    text-align: center;
+}
+
+/* ------------box--------------------*/
+#box {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 50px;
+}
+
+/* -------------box-upper-heading-------------------*/
+#box-upper-heading {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.refresh-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.rotate-icon {
+    animation: rotate .5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.heading {
+    color: #7c3aed;
+    font-size: 36px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+    margin: 1.5rem 0;
+}
+
+/* --------------------------------*/
+/* --------mini-box-----------*/
+#mini-box {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Applying changes for smaller screens */
+@media screen and (max-width: 768px) {
+    #mini-box {
+        grid-template-columns: 1fr;
+        /* Display as a single column on smaller screens */
+    }
+}
+
+#left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    padding: 20px;
+}
+
+#right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    padding: 20px;
+}
+
+.input-label {
+    display: block;
+    font-size: large;
+    font-weight: 600;
+}
+
+.input {
+    font-size: 14px;
+    outline: #fff;
+    padding: 0.6rem 1rem;
+    margin: 1rem;
+    border: 2px solid #7c3aed;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 258px;
+}
+
+#check-button {
+    background: #7c3aed;
+    border: none;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    font-size: large;
+    cursor: pointer;
+    outline: #fff;
+    margin: auto;
+    display: block;
+}
+
+#error-message {
+    display: block;
+    font-size: larger;
+    margin: 1rem 0 0;
+}
+
+/*------------Table-Style--------------*/
+.change-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    /* Updated box-shadow */
+    transition: 1s;
+}
+
+.change-table:hover {
+    border-radius: 0;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+    /* Updated box-shadow */
+}
+
+th {
+    border: 1px solid white;
+    padding: 10px;
+    color: #f7f7f7;
+    background-color: #7c3aed;
+}
+
+td {
+    border: none;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+
+/* Applying changes for smaller screens */
+@media screen and (max-width: 768px) {
+    .change-table {
+        width: 90%;
+    }
+}
