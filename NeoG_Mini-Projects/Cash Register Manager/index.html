@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cash Register Manager</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini-project-2</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
+
 <body>
-    <main>
-        Cash Register Manager
+    <main class="container">
+        <div id="box">
+            <div id="box-upper-heading">
+                <button id="refresh-btn" class="refresh-btn">
+                    <i class="fas fa-sync"></i>
+                </button>
+            </div>
+            <div id="box-heading">
+                <h1 class="heading">Cash Register Manager</h1>
+                <p class="description">
+                    Enter the bill amount and cash given by the customer and know minimum
+                    number of notes to return.
+                </p>
+            </div>
+            <div id="mini-box">
+                <div id="left-section">
+                    <label class="input-label" for="bill-amount">Bill Amount:</label>
+                    <input class="input" id="bill-amount" type="text" />
+                    <label class="input-label" for="cash-given">Cash Given:</label>
+                    <input class="input" id="cash-given" type="text" />
+                    <button id="check-button">Check</button>
+                </div>
+                <div id="right-section">
+                    <p id="error-message"></p>
+                    <table id="change-table" class="change-table">
+                        <caption>
+                            Return Change
+                        </caption>
+                        <tr>
+                            <th>No. of Notes</th>
+                            <td class="no-of-notes"></td>
+                            <td class="no-of-notes"></td>
+                            <td class="no-of-notes"></td>
+                            <td class="no-of-notes"></td>
+                            <td class="no-of-notes"></td>
+                            <td class="no-of-notes"></td>
+                            <td class="no-of-notes"></td>
+                        </tr>
+                        <tr>
+                            <th>Note</th>
+                            <td class="notes"><span>&#8377;</span>2000</td>
+                            <td class="notes"><span>&#8377;</span>500</td>
+                            <td class="notes"><span>&#8377;</span>100</td>
+                            <td class="notes"><span>&#8377;</span>20</td>
+                            <td class="notes"><span>&#8377;</span>10</td>
+                            <td class="notes"><span>&#8377;</span>5</td>
+                            <td class="notes"><span>&#8377;</span>1</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
     </main>
-    <script src="script.js"></script>
+    <script src="script.js" type="text/javascript"></script>
 </body>
+
 </html>
