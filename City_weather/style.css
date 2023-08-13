@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading-weather-icon {
+    font-size: 60px;
+    margin-right: 10px;
+    color: red;
+    transition: transform 0.8s, background 1s;
+}
+
+.heading-weather-icon:hover {
+    transform: rotate(200deg);
+    background: radial-gradient(circle, #fff100, transparent);
+    color: #f39c12;
+    box-shadow: 0 0 30px #fff100;
+    border-radius: 80%;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+    align-items: center;
+}
+
+#cityInput {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.clear-icon {
+    position: absolute;
+    top: 35%;
+    right: 25px;
+    transform: translateY(-50%);
+    font-size: 35px;
+    color: #ccc;
+    cursor: pointer;
+    display: none;
+    transition: color 0.8s;
+}
+
+.clear-icon:hover {
+    color: #ff6b6b;
+}
+
+/* Style for the weather details container */
+.weather-details {
+    display: none;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.weather-details.show {
+    display: block;
+}
+
+/* Weather detail items */
+.weather-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: transform 0.8s, background-color 0.8s;
+}
+
+.weather-detail:hover {
+    transform: translateX(5px);
+    font-size: 30px;
+    color: #f39c12;
+    background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+}
+
+/* Weather icon style */
+.weather-icon {
+    font-size: 30px;
+    margin-right: 12px;
+}
+
+/* Individual icon styles */
+.temperature-icon {
+    color: #e74c3c;
+}
+
+.humidity-icon {
+    color: #3498db;
+}
+
+.wind-icon {
+    color: #2ecc71;
+}
+
+.description-icon {
+    color: #00b894;
+}
+
+.country-icon {
+    color: #f39c12;
+}
+
+.dust-icon {
+    color: #d35400;
+}
+
+.visibility-icon {
+    color: #16a085;
+}
+
+.sunrise-icon {
+    color: #f39c12;
+}
+
+.sunset-icon {
+    color: #8e44ad;
+}
+
+
+
+
+
+
