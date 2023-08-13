@@ -1,0 +1,59 @@
+/* Reset default margins and padding */
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the app on the screen */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.app-container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+canvas {
+    border: 2px solid #000;
+    border-radius: 8px;
+    margin: 10px auto;
+    display: block;
+    background-color: whitesmoke;
+    cursor: crosshair;
+}
+
+input[type="color"] {
+    margin: 10px;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff0037;
+    color: #fff;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
