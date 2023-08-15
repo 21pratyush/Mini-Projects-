@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GitHub Profile Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="GitHub.svg">
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div class="container">
+        <div id="image">
+            <img src="GitHub.svg" alt="Logo" id="logo">
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="username" placeholder="Enter GitHub username">
+            <div class="search-icons">
+                <div class="search-icon"><i class="fas fa-search"></i></div>
+                <div class="cross-icon"><i class="fas fa-times"></i></div>
+            </div>
+        </div>
+        <div class="loader" id="loader"></div>
+        <div class="profile-details">
+            <div class="avatar"><img id="avatar" src="" alt="Avatar"></div>
+            <div class="user-details">
+                <div class="username" id="profileUsername"></div>
+                <div class="bio" id="bio"></div>
+                <a id="profileLink" href="#" target="_blank">Visit Profile</a>
+                <div class="data" id="location"></div>
+                <div class="data" id="followers"></div>
+                <div class="data" id="publicRepos"></div>
+                <div class="data" id="company"></div>
+            </div>
+            <div class="not-found" id="notFound">Username not found</div>
+        </div>
+        <div class="error-message" id="errorMessage"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
