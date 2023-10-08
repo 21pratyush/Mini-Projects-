@@ -1,12 +1,12 @@
-1. NeoG mini Projects
-   -PROFIT AND LOSS
+1. NeoG mini Projects ✅
+   -PROFIT AND LOSS 
    -CASH REGISTRY MANAGEMENT SYSTEM
    -Quiz App -> MARVEL-BASED - 
-2. AWS -EC2 free-tier instance calculate 
+2. AWS -EC2 free-tier instance calculate  
    -number of days
    -Sync current date/time and calculate the last-date of the free-tier instance
-4. BMI calculator 
-5. Guess a number 
+4. BMI calculator  ✅
+5. Guess a number ✅
     :add more feat.
-6. Weather App
-7. Drawing App
+6. Weather App ✅
+7. Drawing App ✅
