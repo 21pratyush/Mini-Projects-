@@ -21,7 +21,7 @@ Shery.imageEffect("#back", {
         noise_height: { value: 0.47, range: [0, 2] },
         noise_scale: { value: 12.15, range: [0, 100] },
     }, gooey: true
-})
+}) 
 
 Shery.imageEffect("#img-div", {
     style: 2, config: {
